@@ -1,0 +1,8 @@
+bin/
+
+cmake-build-debug/
+cmake-build-release/
+
+# Direct Storage ( because license )
+dstorage.lib
+DirectStorage/
