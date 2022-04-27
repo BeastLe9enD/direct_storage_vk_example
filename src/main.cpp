@@ -300,6 +300,8 @@ VkImage create_image(VkDevice device, ID3D12Device8* d3d12_device, IDStorageFact
     CloseHandle(fenceEvent);
     fence->Release();
 
+    dstorage_file->Release();
+
     VkImageViewCreateInfo image_view_create_info = {
         .sType = VK_STRUCTURE_TYPE_IMAGE_VIEW_CREATE_INFO,
         .image = image,
